@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 4 tp2</title>
+</head>
+<body>
+
+
+ <script>
+// Para el calculo de la funcion se puede usar el operador "Remainder" con el signo "%" que nos devuelve el "Resto" de una division.
+// Si el Resto es igual a 0 la condicion del if se cumple se imprime el resultado par.
+// Si el resto es distinto de 0, la condicion no se cumple y el resultado que se imprime se saca de la rama else de la funcion.
+    
+numInput = prompt("Escriba un numero para clasificar");
+
+paresimpares(numInput)
+
+ function paresimpares(numInput){
+
+        if( numInput % 2 === 0){
+             
+            return document.write("El numero ", numInput, " es un numero Par")
+        }
+        else{
+            
+            return document.write("El numero ", numInput, "es un numero Impar")
+            
+        } 
+    }        
+ </script>
+ 
+</body>
+</html>

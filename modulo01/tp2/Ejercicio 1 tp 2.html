@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Ejercicio 1</title>
+</head>
+<body>
+
+
+   <script>
+      var char;
+      var valores = [true, false, 2, "hola", "mundo", 3, char];
+      var ArrayDeString = valores.filter(function (valor){
+         if(typeof(valor) == "string"){
+            return true
+    }
+})
+
+
+   const numMasLargo = ArrayDeString.sort(function (a,b){
+    
+    if(a.length > b.length){
+        return 1
+    }
+    
+    else{
+        return -1
+    }
+})
+   //Ordenamos el array de String con el metodo sort(). Al ordenar de menor a mayor,"b" (Segundo elemento del ArrayDeString)
+   //siempre sera mas largo que "a" (Primer elemento del ArrayDeString)
+    document.write("A partir del array proporcionado<br>")
+    document.write("<br>")
+    document.write('var valores = [verdadero, false, 2, "hola", "mundo", 3, char];<br>')
+    document.write("<br>")
+    document.write("Realizamos los siguientes:<br>")
+    document.write("<br>")
+    document.write("1. Determinamos cual de los elementos de texto es mayor, es decir el que contenga mas letras.<br>")
+    document.write("2. Imprimimos los elementos de menor a mayor cantidad de letras.<br>")
+    document.write("3. Determinamos el resultado de las cuatro operaciones matematicas realizadas con los dos elementos numéricos.<br>")
+    document.write("<br>Entonces:")
+    document.write("<br>")
+    console.log("El texto con mas letras del array de string es ", ArrayDeString[ArrayDeString.length - 1]);
+    document.write("<br>1. El texto con mas letras del array de string es " + ArrayDeString[ArrayDeString.length - 1])
+    console.log("Ordenado de menor a mayor: ", numMasLargo);
+    document.write("<br>")
+    document.write("<br>2. Ordenado de menor a mayor: ", numMasLargo[0])
+    document.write(" - ", numMasLargo[1])
+   
+    
+
+    //Para los numeros
+    //filtramos los numeros del array original en un nuevo array(ArrayDeNumeros)
+    
+    var ArrayDeNumeros = valores.filter(function(valor) {
+        if (typeof(valor) == "number") {
+           return true
+        }else {
+           return false
+        }
+     });
+
+     for(let i = 0 ; i <= 0 ; i++){
+   
+        console.log("2 + 3 =", (ArrayDeNumeros[i] + ArrayDeNumeros[i + 1]));
+        console.log("2 - 3 =", (ArrayDeNumeros[i] - ArrayDeNumeros[i + 1]));
+        console.log("2 * 3 =", (ArrayDeNumeros[i] * ArrayDeNumeros[i + 1]));
+        console.log("2 / 3 =", (ArrayDeNumeros[i] / ArrayDeNumeros[i + 1]));
+        
+        document.write("<br>")
+        document.write("<br>3. Operaciones matematicas:")
+        document.write("<br>")
+        document.write("<br>2 + 3 =", (ArrayDeNumeros[i] + ArrayDeNumeros[i + 1]));
+        document.write("<br>2 - 3 =", (ArrayDeNumeros[i] - ArrayDeNumeros[i + 1]))
+        document.write("<br>2 * 3 =", (ArrayDeNumeros[i] * ArrayDeNumeros[i + 1]))
+        document.write("<br>2 / 3 =", (ArrayDeNumeros[i] / ArrayDeNumeros[i + 1]))
+     }
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 5 tp2</title>
+</head>
+<body>
+ <script>
+
+    cadenaDeTexto = prompt("Escriba frase que desee analizar.")
+    
+    document.write("Su frase es: ", cadenaDeTexto, "<br><br>")
+    document.write("Segun nuestros laboratorios su frase es una cadena de texto que... <br><br>")
+    mayusMinus(cadenaDeTexto)
+    document.write("<br>*Fue escrita por un humano (No es un Robot)")
+    function mayusMinus (cadenaDeTexto){
+                if(typeof(cadenaDeTexto) == "string"){
+                if(cadenaDeTexto == cadenaDeTexto.toUpperCase()){
+                    document.write("*Se compone completamente por caracteres en mayusculas")
+                }
+                    
+                if(cadenaDeTexto == cadenaDeTexto.toLowerCase()){
+                    document.write("*Se compone completamente por caracteres en minusculas")
+                }
+        }
+
+        if(cadenaDeTexto != cadenaDeTexto.toLowerCase() && cadenaDeTexto != cadenaDeTexto.toUpperCase()){
+            document.write("*Esta compuesta por mayusculas y minusculas")
+        }
+    }
+ </script>
+</body>
+</html>

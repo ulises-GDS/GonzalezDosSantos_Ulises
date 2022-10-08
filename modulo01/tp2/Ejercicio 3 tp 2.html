@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 3 tp2</title>
+</head>
+<body>
+ <script>
+   
+   var numimput = prompt("Escriba un numero entero para calcular su factorial")
+   document.write("Ingreso el numero ", numimput)
+   document.write("<br>")
+   document.write("Realizando los calculos solicitados<br>")
+   document.write("<br>")
+   
+    
+    var factoring = numimput
+   for ( i = 1 ; i < numimput ; i++ ){
+        document.write("Calculo Numero " + i)
+        document.write("<br>")
+        factoring *= i
+        
+    }
+    document.write("<br>")
+    document.write("El factorial del numero " + numimput + " es igual a " + factoring);
+
+ </script>
+</body>
+</html>

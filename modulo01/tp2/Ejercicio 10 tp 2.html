@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 10 tp2</title>
+</head>
+<body>
+ <script>
+
+    monthInput = prompt("Ingrese el numero del mes que quiere averiguar")
+    month = parseInt(monthInput)
+    monthsOfYear = ["","Enero", "febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+    monthsDays = ["", 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    document.write("Eligió el Mes número ", month, "<br>")
+    for(let i = 1 ; i <= monthsOfYear.length ; i++){
+            if(month == i){
+                document.write("El mes de " + monthsOfYear[i] + " tiene " + monthsDays[i], " días." )
+                break
+            }
+        }
+
+ </script>
+</body>
+</html>

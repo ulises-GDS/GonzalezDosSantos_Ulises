@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 6 tp2</title>
+</head>
+<body>
+ <script>
+    
+    word1 = prompt("Pruebe escribir una palabra para analizarla con nuestro motor de analisis de texto literatusengine4.0")
+    arrayVocales = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    document.write('Su palabra es "', word1, '".<br><br>')
+    let posicion = 0
+    let aux2 = false
+    
+    for(let i in word1){
+            if(aux2 == true){
+                break
+            }
+            for(j = 0 ; j <= arrayVocales.length ; j++){
+                            if(posicion == i){
+                                aux = parseInt(i)
+                                posicion = aux + 1
+
+                            }
+                    if(word1[i] == arrayVocales[j]){
+ 
+                        document.write('*La primera vocal de la palabra es la "', word1[i],'".<br>')
+                        document.write("*Esta vocal se encuentra en la ", posicion, " posicion de la misma.")
+                       aux2 = true
+                    
+                    }
+
+            }
+
+        }
+    
+
+ </script>
+</body>
+</html>

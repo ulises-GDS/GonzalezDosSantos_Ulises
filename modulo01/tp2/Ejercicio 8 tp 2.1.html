@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 8 tp2</title>
+</head>
+<body>
+ <script>
+document.write("Aqui tiene 100 numeros generados de manera aleatoria segun su pedido:<br><br>")
+var numQuantity = 100;
+var random= []
+        while(random.length < numQuantity ){
+            var numeroAleatorio = Math.ceil(Math.random() * numQuantity);
+            var bandera = false;
+                for(var i = 0 ; i < random.length ; i++){
+                    if(random[i] == numeroAleatorio){
+                        bandera = true;
+                        break;
+                    }
+                }
+                    if(!bandera){
+                        random[random.length] = numeroAleatorio;
+                    }
+
+        }
+
+        for(i = 0 ; i < random.length ; i++){
+            document.write( random[i]);
+            document.write("<p>")
+        }
+ 
+ </script>
+</body>
+</html>
