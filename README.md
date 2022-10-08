@@ -19,4 +19,4 @@ los ejercicios resueltos de la cursada 2022.
 
 > <ins>Author</ins>: González Dos Santos Ulises
 
-This repositiory was create with academic purposes.<br> It contains the resolved excercises resolved during 2022.
+This repositiory was created with academic purposes.<br> It contains the resolved excercises resolved during 2022.
