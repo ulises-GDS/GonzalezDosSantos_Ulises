@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>"Escriba que numero de mes busca"</title>
+</head>
+<body>
+<script>
+document.write("Escriba que numero de mes busca")
+document.write("<br>")
+busqueda = window.prompt("Escriba que numero de mes busca", "0")
+Search = parseInt(busqueda)
+Meses = [":","Enero", "Febrero", "Marzo", "Abril",
+"Mayo","Junio", "Julio"
+, "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ]
+i = 0
+resultado = "..."
+for(i = 0 ; i=Search ; i++){
+console.log(Meses[i])
+if(Search = Meses[i]){
+resultado = Meses[i]
+}
+}
+document.write("El numero de mes que escribio corresponde a:")
+document.write("<br>")
+document.write(resultado)
+</script>
+</body>
+</html>
